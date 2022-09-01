@@ -1,5 +1,5 @@
 import * as React from "react";
-import ReactMarkdown from "react-markdown";
+import Markdown from 'markdown-to-jsx';
 
 type PostProps = {
   body: string;
@@ -14,7 +14,7 @@ const Post = ({body, title, c_topic}: PostProps) => {
       <div className="centered-container">
         <h1 className="font-bold text-2xl mb-5">{c_topic}</h1>
         <h3 className="font-extrabold text-5xl mb-5">{title}</h3>
-        <ReactMarkdown>{body}</ReactMarkdown>
+        <Markdown>{body}</Markdown>
       </div>
     </>
   );
