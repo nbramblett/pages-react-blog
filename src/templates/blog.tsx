@@ -59,7 +59,7 @@ export const config: TemplateConfig = {
  * take on the form: featureName/entityId
  */
 export const getPath: GetPath<TemplateProps> = ({ document }) => {
-  return `location/${document.id.toString()}`;
+  return `posts/${document.id.toString()}`;
 };
 
 /**
